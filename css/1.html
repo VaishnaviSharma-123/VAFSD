@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div>p{
+            margin:0;
+            background-color: aqua;
+        }
+        div+p{
+            background-color:antiquewhite;
+        }
+        #para
+        {
+            background-color: beige;
+        }
+        div-p{
+            margin:10px;
+            background-color:pink;
+        }
+        p::first-letter{
+            font-size:larger;color:red;
+        }
+        p::after{
+            content:'read more';color:red;
+            background-color:aqua;
+        }
+        p::first-line{
+            background-color:brown;
+            text-decoration:underline;
+        }
+        ul{display:flex;list-style:none;}
+        ul li{margin:0 20px;}
+        ul li a{text-decoration:none;color:#000}
+        ul li a:active{
+            color:pink;
+        }
+        </style>
+</head>
+<body>
+    <h1>Hello Worlds</h1>
+    <div>
+    <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+
+    </p>
+    <p id="para">orem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin. The first two words themselves are a truncation of dolorem ipsum ("pain itself").</p>
+    <p class="para">ersions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized by advertisements for Letraset transfer sheets.[1] Lorem ipsum was introduced to the digital world in the mid-1980s, when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker. Other popular word processors, including Pages and Microsoft Word, have since adopted Lorem ipsum,[2] as have many LaTeX packages,[3][4][5] web content managers such as Joomla! and WordPress, and CSS libraries such as Semantic UI.</p>
+</div>
+<ul>
+    <li><a href="">Home</a></li>
+    <li><a href="">About us</a></li>
+    <li><a href="">Courses</a></li>
+    <li><a href="">Services</a></li>
+    <li><a href="">Contact us</a></li>
+</ul>
+</body>
+</html>
